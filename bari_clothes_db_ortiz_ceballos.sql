@@ -12,14 +12,14 @@ CREATE TABLE EMPLEADO (
   empleado_nombre 	VARCHAR(60),
   mpleado_apellido 	VARCHAR(60),
   documento 		INT UNIQUE,
-  empleado_teléfono INT,
+  empleado_teléfono 	INT,
     
   PRIMARY KEY (empleado_id)
 );
 
 CREATE TABLE SUCURSAL (
   sucursal_id 		INT NOT NULL AUTO_INCREMENT,
-  sucursal_ciudad VARCHAR(100) NOT NULL,
+  sucursal_ciudad 	VARCHAR(100) NOT NULL,
   sucursal_calle 	VARCHAR(100) NOT NULL,
   codigo_postal 	INT NOT NULL,
     
@@ -27,10 +27,10 @@ CREATE TABLE SUCURSAL (
 );
 
 CREATE TABLE COMPRA (
-	compra_id				INT NOT NULL AUTO_INCREMENT,
+	compra_id		INT NOT NULL AUTO_INCREMENT,
   sucursal_id			INT NOT NULL,	
   cliente_id			INT NOT NULL,	
-	valor						INT NOT NULL,
+	valor			INT NOT NULL,
 	metodo_pago_id	INT NOT NULL,
 	fecha_compra		DATE DEFAULT(CURDATE()),
 	
