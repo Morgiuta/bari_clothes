@@ -7,11 +7,11 @@ USE bari_clothes;
 -- Creacion de las tablas con su primary key correspondiente
 
 CREATE TABLE EMPLEADO (
-  empleado_id 			INT NOT NULL AUTO_INCREMENT,
-  sucursal_id 			INT NOT NULL,
+  empleado_id 		INT NOT NULL AUTO_INCREMENT,
+  sucursal_id 		INT NOT NULL,
   empleado_nombre 	VARCHAR(60),
   mpleado_apellido 	VARCHAR(60),
-  documento 				INT UNIQUE,
+  documento 		INT UNIQUE,
   empleado_teléfono INT,
     
   PRIMARY KEY (empleado_id)
