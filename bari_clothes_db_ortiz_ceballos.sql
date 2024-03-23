@@ -6,7 +6,7 @@ USE bari_clothes;
 
 CREATE TABLE EMPLEADO (
     empleado_id 		INT NOT NULL AUTO_INCREMENT,
-    sucursal_id 		INT NOT NULL AUTO_INCREMENT,
+    sucursal_id 		INT NOT NULL,
     empleado_nombre 		VARCHAR(60) NOT NULL,
     empleado_apellido 		VARCHAR(60) NOT NULL,
     documento 			INT NOT NULL UNIQUE,
@@ -26,8 +26,8 @@ CREATE TABLE SUCURSAL (
 
 CREATE TABLE COMPRA (
     compra_id		INT NOT NULL AUTO_INCREMENT,
-    sucursal_id		INT NOT NULL AUTO_INCREMENT,	
-    cliente_id		INT NOT NULL AUTO_INCREMENT,	 
+    sucursal_id		INT NOT NULL,	
+    cliente_id		INT NOT NULL,	 
     valor		INT NOT NULL,
     metodo_pago_id	INT NOT NULL,
     fecha_compra	DATE DEFAULT(CURDATE()),
@@ -43,8 +43,8 @@ CREATE TABLE METODO_PAGO (
 );
 
 CREATE TABLE DETALLE (
-    producto_id INT NOT NULL AUTO_INCREMENT,
-    compra_id 	INT NOT NULL AUTO_INCREMENT
+    producto_id INT NOT NULL,
+    compra_id 	INT NOT NULL
 );
 
 CREATE TABLE PRODUCTO (
@@ -67,14 +67,14 @@ CREATE TABLE PROVEEDOR (
 );
 
 CREATE TABLE PRODUCTO_PROVEEDOR(
-    producto_id 	INT NOT NULL AUTO_INCREMENT, 	
-    proveedor_id	INT NOT NULL AUTO_INCREMENT	
+    producto_id 	INT NOT NULL, 	
+    proveedor_id	INT NOT NULL	
 );
 
 CREATE TABLE ENVIO (
     envio_id 				INT NOT NULL AUTO_INCREMENT,
-    compra_id 				INT NOT NULL AUTO_INCREMENT,
-    empresa_transporte_id 		INT NOT NULL AUTO_INCREMENT,
+    compra_id 				INT NOT NULL,
+    empresa_transporte_id 		INT NOT NULL,
     ciudad_envio 			VARCHAR(100) NOT NULL,
     calle_envio 			VARCHAR(100) NOT NULL,
     entregado 				BOOL NOT NULL,
