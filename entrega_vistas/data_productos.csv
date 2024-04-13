@@ -1,0 +1,101 @@
+producto_id,modelo,marca,precio_producto,temporada
+1,calcetines,Nike,3124,2014-10-25
+2,vestido,Puma,1755,
+3,chaqueta,Under Armour,3954,2010-06-04
+4,falda,Converse,1715,2005-09-17
+5,pantalones,Champion,4276,2017-11-18
+6,vestido,Fila,4602,2017-12-23
+7,jersey,Reebok,3198,2010-07-22
+8,guantes,Converse,4045,2024-04-01
+9,bañador,Vans,2417,2007-07-02
+10,jersey,Champion,3784,2009-02-07
+11,jersey,Champion,1566,2016-08-22
+12,pantalones,Puma,4955,2019-06-14
+13,jersey,Nike,4514,2021-10-09
+14,vestido,Converse,3775,2014-12-15
+15,sombrero,New Balance,3421,2011-10-01
+16,guantes,New Balance,2977,2016-01-31
+17,bufanda,Converse,3462,2013-01-01
+18,camisa,Nike,2292,2011-12-19
+19,bufanda,Reebok,2733,2005-01-27
+20,gorra,Fila,2241,2005-07-19
+21,sombrero,Under Armour,4157,2018-06-28
+22,chaleco,Puma,3389,2005-06-19
+23,guantes,Nike,3427,2005-05-09
+24,chaqueta,Reebok,2105,2013-10-25
+25,camisa,New Balance,4631,2025-06-07
+26,chaleco,Puma,1398,
+27,calcetines,Vans,2353,2018-04-09
+28,vestido,Adidas,3323,2021-12-24
+29,chaqueta,Nike,2458,2022-04-08
+30,gorra,Reebok,2252,2010-02-03
+31,gorra,Adidas,2183,2013-06-23
+32,zapatos,Champion,4093,2019-09-20
+33,botas,New Balance,1111,2024-05-03
+34,botas,Vans,1915,2013-03-07
+35,zapatos,Champion,4221,2015-08-03
+36,traje,Nike,1937,2023-04-08
+37,gorra,Fila,1910,2022-08-11
+38,botas,Reebok,3639,2007-10-02
+39,abrigo,Reebok,2674,2024-02-26
+40,blusa,Fila,1311,2008-04-24
+41,pantalones,Nike,1158,2021-04-06
+42,botas,Reebok,1280,2024-01-15
+43,vestido,Vans,3828,2025-03-27
+44,camisa,Converse,4965,2015-05-16
+45,vestido,Nike,2222,2023-10-05
+46,chaqueta,Champion,2881,2021-01-19
+47,guantes,Puma,2902,2024-06-02
+48,chaleco,Under Armour,3802,2016-07-10
+49,ropa,Vans,4693,2019-08-25
+50,botas,Puma,2744,2021-07-31
+51,jersey,Converse,2405,2020-09-07
+52,abrigo,Champion,1074,2014-02-26
+53,botas,Reebok,4770,2008-08-09
+54,gorra,Vans,1248,2024-01-30
+55,pantalones,Adidas,2412,2006-04-30
+56,abrigo,Fila,1895,
+57,abrigo,Puma,1477,
+58,gorra,New Balance,4086,2008-02-16
+59,ropa,New Balance,2242,2009-07-12
+60,jersey,Under Armour,2290,2023-02-17
+61,zapatos,Adidas,3312,2021-12-24
+62,abrigo,Reebok,4717,2013-04-07
+63,corbata,Vans,4349,
+64,botas,New Balance,4251,2013-04-14
+65,ropa,Converse,2546,2012-07-15
+66,sombrero,Reebok,3442,2010-03-30
+67,traje,Reebok,1008,2010-04-20
+68,traje,Under Armour,2756,2009-07-25
+69,falda,Under Armour,2431,
+70,calcetines,Nike,1590,2017-10-14
+71,traje,Under Armour,1685,2005-01-28
+72,sombrero,Reebok,3100,2013-04-29
+73,chaleco,Puma,3891,2011-09-23
+74,calcetines,Fila,2298,2013-05-14
+75,abrigo,Converse,2837,2022-05-24
+76,ropa,Champion,1647,2010-08-19
+77,blusa,Reebok,3598,2025-11-15
+78,botas,Converse,2102,2025-09-23
+79,corbata,Puma,1104,2015-09-08
+80,jersey,Vans,4019,2019-02-12
+81,botas,New Balance,4351,2014-07-20
+82,bañador,Converse,2258,2008-01-09
+83,corbata,Under Armour,4704,
+84,bufanda,Puma,2130,2005-02-09
+85,chaleco,Adidas,1211,2024-05-04
+86,guantes,Nike,4789,2006-10-10
+87,guantes,Vans,1894,2024-07-21
+88,sombrero,Puma,3757,2006-11-23
+89,bufanda,Puma,4736,2019-11-09
+90,bufanda,Fila,4391,
+91,chaleco,Under Armour,1406,2014-04-02
+92,gorra,Vans,3608,2012-06-11
+93,abrigo,Reebok,3357,
+94,calcetines,Vans,3965,2017-11-02
+95,falda,Champion,4791,2011-05-17
+96,camisa,Nike,2332,2009-01-29
+97,sombrero,Nike,4801,2006-02-04
+98,chaleco,Fila,3908,2014-08-07
+99,vestido,Puma,2899,2025-09-08
+100,chaleco,Nike,1447,2023-05-23

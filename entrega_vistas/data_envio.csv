@@ -1,0 +1,101 @@
+envio_id,compra_id,empresa_transporte_id,ciudad_envio,calle_envio,entregado
+1,99,1,Bahia Blanca,Calle Florida,0
+2,301,4,Posadas,Avenida Libertador,0
+3,10,3,Santa Fe,Calle Paraguay,0
+4,89,2,Mar del Plata,Avenida Figueroa Alcorta,1
+5,296,3,Buenos Aires,Avenida 9 de Julio,0
+6,111,5,Salta,Avenida Las Heras,1
+7,64,2,Rosario,Avenida 9 de Julio,1
+8,172,4,Resistencia,Calle Maipú,1
+9,106,5,San Salvador de Jujuy,Calle Alsina,1
+10,107,2,Corrientes,Avenida San Juan,1
+11,75,5,Corrientes,Calle Reconquista,1
+12,16,4,Tucuman,Calle Viamonte,1
+13,119,1,San Salvador de Jujuy,Calle Maipú,1
+14,474,5,La Plata,Avenida Las Heras,1
+15,285,5,La Plata,Calle Paraguay,0
+16,113,4,Resistencia,Calle Rivadavia,0
+17,313,5,Parana,Calle Rivadavia,0
+18,236,5,Tucuman,Calle Rivadavia,1
+19,122,4,San Salvador de Jujuy,Avenida Montes de Oca,1
+20,391,5,Resistencia,Avenida Santa Fe,1
+21,177,2,San Luis,Avenida Montes de Oca,0
+22,362,2,Rio Cuarto,Avenida Cabildo,0
+23,227,5,Posadas,Calle Viamonte,1
+24,429,5,Mar del Plata,Calle Bartolomé Mitre,1
+25,214,3,Neuquen,Calle Viamonte,1
+26,365,4,Bahia Blanca,Avenida 9 de Julio,1
+27,330,3,Rio Cuarto,Calle Paraguay,0
+28,205,4,Bahia Blanca,Calle Paraguay,0
+29,218,1,Posadas,Avenida Pueyrredón,1
+30,424,1,Tucuman,Avenida San Juan,0
+31,392,2,Neuquen,Avenida Figueroa Alcorta,1
+32,449,3,Salta,Calle Lavalle,0
+33,326,5,Santa Fe,Calle Sarmiento,1
+34,490,3,Salta,Calle Alsina,0
+35,143,3,San Juan,Calle Córdoba,0
+36,340,2,Mendoza,Calle Córdoba,1
+37,20,1,Tucuman,Avenida Montes de Oca,0
+38,236,4,Rosario,Avenida de Mayo,1
+39,191,3,Mendoza,Avenida Las Heras,1
+40,422,1,Salta,Avenida Callao,1
+41,183,4,Formosa,Avenida Pueyrredón,0
+42,437,3,La Plata,Calle Sarmiento,1
+43,363,2,San Salvador de Jujuy,Avenida Figueroa Alcorta,1
+44,76,1,Parana,Avenida 9 de Julio,0
+45,352,4,Salta,Avenida Corrientes,1
+46,202,2,Formosa,Calle San Martín,1
+47,205,1,Buenos Aires,Calle San Martín,1
+48,368,5,Mendoza,Avenida 9 de Julio,1
+49,209,3,San Salvador de Jujuy,Calle Suipacha,1
+50,407,2,Buenos Aires,Avenida Corrientes,0
+51,330,1,San Salvador de Jujuy,Avenida Cabildo,0
+52,364,4,La Plata,Calle Viamonte,1
+53,396,4,La Plata,Calle Reconquista,0
+54,87,2,Mar del Plata,Avenida Corrientes,0
+55,487,4,Mendoza,Avenida Santa Fe,1
+56,317,4,Formosa,Avenida Callao,0
+57,36,2,San Salvador de Jujuy,Calle Viamonte,1
+58,323,5,Bahia Blanca,Avenida Belgrano,1
+59,164,3,San Juan,Calle Suipacha,1
+60,12,4,Buenos Aires,Calle Maipú,1
+61,390,1,La Plata,Calle Lavalle,1
+62,361,4,Bahia Blanca,Avenida Santa Fe,1
+63,310,1,Mendoza,Avenida Juan B. Justo,0
+64,499,4,Mar del Plata,Avenida 9 de Julio,0
+65,122,4,San Salvador de Jujuy,Calle Córdoba,1
+66,129,3,La Plata,Avenida Rivadavia,0
+67,420,5,Parana,Avenida Scalabrini Ortiz,1
+68,113,3,Corrientes,Calle Alsina,1
+69,83,5,Resistencia,Calle Maipú,1
+70,377,1,Santa Fe,Avenida Juan B. Justo,0
+71,180,1,Formosa,Avenida 9 de Julio,0
+72,228,4,Cordoba,Calle Alsina,1
+73,166,5,Formosa,Calle Florida,1
+74,434,2,Bahia Blanca,Avenida Pueyrredón,0
+75,310,4,Tucuman,Avenida Callao,0
+76,383,4,San Juan,Calle Florida,1
+77,457,3,Mar del Plata,Avenida 9 de Julio,0
+78,58,4,Resistencia,Calle Sarmiento,1
+79,434,1,Salta,Calle Sarmiento,1
+80,260,3,Neuquen,Avenida Juan B. Justo,1
+81,395,2,Buenos Aires,Avenida Rivadavia,1
+82,296,2,Tucuman,Avenida 9 de Julio,1
+83,269,3,San Salvador de Jujuy,Calle Bartolomé Mitre,0
+84,67,2,San Juan,Calle Viamonte,1
+85,336,2,Resistencia,Avenida de Mayo,0
+86,339,4,Tucuman,Avenida Callao,1
+87,183,2,Rio Cuarto,Calle Reconquista,0
+88,147,5,Neuquen,Avenida de Mayo,0
+89,244,2,Bahia Blanca,Avenida Corrientes,1
+90,268,5,Mendoza,Avenida Libertador,1
+91,394,5,San Juan,Avenida Callao,0
+92,262,2,San Salvador de Jujuy,Calle Reconquista,1
+93,293,2,San Salvador de Jujuy,Calle Reconquista,0
+94,93,2,Salta,Calle Alsina,0
+95,458,3,Parana,Avenida Juan B. Justo,0
+96,242,2,Mendoza,Avenida Libertador,0
+97,27,4,Buenos Aires,Calle San Martín,1
+98,299,4,San Juan,Calle Talcahuano,1
+99,283,5,Posadas,Avenida Figueroa Alcorta,1
+100,82,1,Resistencia,Calle Suipacha,0
