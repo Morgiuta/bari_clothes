@@ -40,11 +40,11 @@ SELECT fn_promedio_precios_productos_por_marca ('Puma');
 
 -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --
 -- Se quiere saber la cantidad de ventas por mes en total de la empresa
-DROP FUNCTION IF EXISTS total_ventas_por_mes;
+DROP FUNCTION IF EXISTS fn_total_ventas_por_mes;
 
 DELIMITER //
 
-CREATE FUNCTION total_ventas_por_mes (
+CREATE FUNCTION fn_total_ventas_por_mes (
     p_mes INT,
     p_anno INT
 ) RETURNS INT
