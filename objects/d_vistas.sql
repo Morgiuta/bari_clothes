@@ -1,5 +1,7 @@
 USE bari_clothes;
 
+USE bari_clothes;
+
 -- PRIMERA VISTA --
 -- Se quieren saber la cantidad de ventas que han hecho a travez del tiempo
 -- Ya que una un cliente puede comprar más de un producto a la vez

@@ -1,8 +1,7 @@
-## MODIFCACION BASE DE DATOS
+## Primera Entrega Ortiz Ceballos Francisco
 
-  Con la correcion de la tutora CARLA PALERMO se modifco la forma de presentar los archivos
+  En esta es una breve descripcion de mi primera entrega
 
-  - Las entregas estan separadas por carpetas
-  - En la primera entrega se junto el diccionario de datos y la descripcion de la DB
-
-
+  - En el erchivo **bari_clothes_db_ortiz_ceballos** se puede visulizar la base de datos creada por el alumno
+  - En el archivo **bari_clothes_DER_ortiz_ceballos** se puede ver el **"Diagrama Entidad Relación"**
+  - En **descripcion_y_listado_DB_ortiz_ceballos** Se encuentra un adescripcion de la base de datos

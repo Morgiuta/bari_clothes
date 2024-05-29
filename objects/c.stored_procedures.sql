@@ -1,3 +1,5 @@
+USE bari_clothes;
+
 DROP PROCEDURE IF EXISTS agregar_producto_inventario;
 
 DELIMITER //

@@ -8,34 +8,34 @@ USE bari_clothes;
 
 -- Tabla de empleados
 CREATE TABLE empleado (
-  empleado_id     INT NOT NULL AUTO_INCREMENT,
-  sucursal_id     INT NOT NULL,
-  empleado_nombre   VARCHAR(60) NOT NULL,
-  empleado_apellido   VARCHAR(60) NOT NULL,
-  documento       INT NOT NULL UNIQUE,
-  empleado_teléfono   INT NOT NULL,
+  empleado_id        INT NOT NULL AUTO_INCREMENT,
+  sucursal_id        INT NOT NULL,
+  empleado_nombre    VARCHAR(60) NOT NULL,
+  empleado_apellido  VARCHAR(60) NOT NULL,
+  documento          INT NOT NULL UNIQUE,
+  empleado_telefono  INT NOT NULL,
   
   PRIMARY KEY (empleado_id)
 );
 
 -- Tabla de sucursales
 CREATE TABLE sucursal (
-  sucursal_id   INT NOT NULL AUTO_INCREMENT,
-  sucursal_ciudad VARCHAR(100) NOT NULL,
-  sucursal_calle  VARCHAR(100) NOT NULL,
-  codigo_postal   INT NOT NULL,
+  sucursal_id       INT NOT NULL AUTO_INCREMENT,
+  sucursal_ciudad   VARCHAR(100) NOT NULL,
+  sucursal_calle    VARCHAR(100) NOT NULL,
+  codigo_postal     INT NOT NULL,
   
   PRIMARY KEY (sucursal_id)
 );
 
 -- Tabla de compras
 CREATE TABLE compra (
-  compra_id   INT NOT NULL AUTO_INCREMENT,
-  sucursal_id   INT NOT NULL, 
-  cliente_id    INT NOT NULL,  
-  valor     INT NOT NULL,
+  compra_id       INT NOT NULL AUTO_INCREMENT,
+  sucursal_id     INT NOT NULL, 
+  cliente_id      INT NOT NULL,  
+  valor           INT NOT NULL,
   metodo_pago_id  INT NOT NULL,
-  fecha_compra  DATE DEFAULT(CURDATE()),
+  fecha_compra    DATE DEFAULT(CURDATE()),
   
   PRIMARY KEY (compra_id)
 );
@@ -58,26 +58,26 @@ CREATE TABLE detalle (
 
 -- Tabla de productos
 CREATE TABLE producto (
-  producto_id   INT NOT NULL AUTO_INCREMENT,
-  modelo      VARCHAR(70) NOT NULL,
-  marca       VARCHAR(70) NOT NULL,
-  precio_producto INT NOT NULL,
-  temporada     DATE,
+  producto_id      INT NOT NULL AUTO_INCREMENT,
+  modelo           VARCHAR(70) NOT NULL,
+  marca            VARCHAR(70) NOT NULL,
+  precio_producto  INT NOT NULL,
+  temporada        DATE,
   
   PRIMARY KEY (producto_id)
 );
 
 -- Tabla de proveedores
 CREATE TABLE proveedor (
-  proveedor_id      INT NOT NULL AUTO_INCREMENT,
-  proveedor_nombre  VARCHAR(70) DEFAULT 'proveedor',
-  proveedor_telefono  INT NOT NULL,
-  proveedor_email   VARCHAR(100) UNIQUE,
+  proveedor_id         INT NOT NULL AUTO_INCREMENT,
+  proveedor_nombre     VARCHAR(70) DEFAULT 'proveedor',
+  proveedor_telefono   INT NOT NULL,
+  proveedor_email      VARCHAR(100) UNIQUE,
   
   PRIMARY KEY (proveedor_id)
 );
 
--- Tabala para saber a que productor le corresponde cada producto
+-- Tabla para saber a que productor le corresponde cada producto
 CREATE TABLE producto_proveedor (
   producto_id   INT NOT NULL,   
   proveedor_id  INT NOT NULL,
@@ -87,12 +87,12 @@ CREATE TABLE producto_proveedor (
 
 -- Tabla de envio
 CREATE TABLE envio (
-  envio_id        INT NOT NULL AUTO_INCREMENT,
-  compra_id         INT NOT NULL,
-  empresa_transporte_id   INT NOT NULL,
-  ciudad_envio      VARCHAR(100) NOT NULL,
-  calle_envio       VARCHAR(100) NOT NULL,
-  entregado         BOOL NOT NULL,
+  envio_id              INT NOT NULL AUTO_INCREMENT,
+  compra_id             INT NOT NULL,
+  empresa_transporte_id INT NOT NULL,
+  ciudad_envio          VARCHAR(100) NOT NULL,
+  calle_envio           VARCHAR(100) NOT NULL,
+  entregado             BOOL NOT NULL,
   
   PRIMARY KEY (envio_id)
 );
@@ -109,12 +109,12 @@ CREATE TABLE empresa_transporte (
 
 -- Tabla de clientes
 CREATE TABLE cliente (
-  cliente_id      INT NOT NULL AUTO_INCREMENT,
-  cliente_nombre    VARCHAR(50) DEFAULT 'cliente',
-  cliente_apellido  VARCHAR(50) DEFAULT 'cliente', 
+  cliente_id          INT NOT NULL AUTO_INCREMENT,
+  cliente_nombre      VARCHAR(50) DEFAULT 'cliente',
+  cliente_apellido    VARCHAR(50) DEFAULT 'cliente', 
   cliente_documento   INT UNIQUE,
-  cliente_mail    VARCHAR(100) UNIQUE,
-  cliente_telefono  INT NOT NULL,
+  cliente_mail        VARCHAR(100) UNIQUE,
+  cliente_telefono    INT NOT NULL,
   
   PRIMARY KEY (cliente_id)
 );
@@ -130,7 +130,7 @@ CREATE TABLE inventario (
   PRIMARY KEY(inventario_id)
 );
 
--- Tabla de tipo de movimineto de los productos
+-- Tabla de tipo de movimiento de los productos
 DROP TABLE IF EXISTS tipo_movimiento;
 CREATE TABLE tipo_movimiento(
   tipo_movimiento_id       INT NOT NULL,
@@ -140,11 +140,11 @@ CREATE TABLE tipo_movimiento(
 );
 
 -- Tabla de movimiento en el inventario
-DROP TABLE IF EXISTS movimietno_inventario;
+DROP TABLE IF EXISTS movimiento_inventario;
 CREATE TABLE movimiento_inventario (
   movimiento_id       INT NOT NULL AUTO_INCREMENT,
   inventario_id       INT NOT NULL,
-  tipo_movimiento_id     INT NOT NULL,
+  tipo_movimiento_id  INT NOT NULL,
   cantidad_afectada   INT NOT NULL,
   fecha_movimiento    DATE NOT NULL,
   

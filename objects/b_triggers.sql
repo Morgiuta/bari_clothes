@@ -1,4 +1,6 @@
-DROP TRIGGER tr_actualizar_inventario_despues_insertar_compra;
+USE bari_clothes;
+
+DROP TRIGGER IF EXISTS tr_actualizar_inventario_despues_insertar_compra;
 DELIMITER //
 
 CREATE TRIGGER tr_actualizar_inventario_despues_insertar_compra
@@ -26,7 +28,7 @@ END //
 
 DELIMITER ;
 
-INSERT INTO compra (sucursal_id, cliente_id, valor, metodo_pago_id)
+INSERT INTO compra (compra_id,sucursal_id, cliente_id, valor, metodo_pago_id, fecha_compra)
 VALUES (1, 1, 100, 2);
 
 -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --

@@ -1,12 +1,12 @@
 
 include .env
 
-ERVICE_NAME=mysql
+SERVICE_NAME=mysql
 HOST=127.0.0.1
 PORT=3306
-PASSWORD=${ROOR_PASSWORD}
+PASSWORD=${ROOT_PASSWORD}
 DATEBASE=${DATABASE_NAME}
-BACKUP_DIR_FILES
+BACKUP_DIR_FILES=${BACKUP_DIR}
 
 DOCKER_COMPOSE_FILE=./docker-compose.yml
 DATABASE_CREATION=./structure/database_structure.sql
@@ -38,7 +38,9 @@ up:
 
 objects:
 	@echo "Create objects in database"
-	docker exec -it $(SERVICE_NAME)  mysql -u root -p$(PASSWORD) -e "source ./objects/a_functions.sql; source ./objects/b_triggers.sql; source ./objects/c_stored_procedures.sql; source ./objects/d_views.sql; source ./objects/e_roles_users.sql; " 
+	docker exec -it $(SERVICE_NAME)  pwd
+	docker exec -it $(SERVICE_NAME) ls -la /objects
+	docker exec -it $(SERVICE_NAME)  mysql -u root -p$(PASSWORD) -e "source ./objects/a_funciones.sql; source ./objects/b_triggers.sql; source ./objects/c_stored_procedures.sql; source ./objects/d_views.sql; source ./objects/e_roles_users.sql; " 
 	@echo "Process completed"
 
 test-db:
