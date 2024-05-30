@@ -34,9 +34,7 @@ Entre los pedidios este nos detallo como tiene que funcionar la misma
 
 ## Diagrama Entidad Relacion
 <center>
-
-[![image]](image/bari_clothes_DER_ortiz_ceballos.png)
-
+<img src=https://github.com/Morgiuta/bari_clothes/blob/main/image/bari_clothes.png style="width: 100% ; aspect-ratio:16/9">
 </center>
   
 ## Listado de tablas y descripcion  
