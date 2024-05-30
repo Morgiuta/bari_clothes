@@ -89,4 +89,3 @@ END//
 DELIMITER ;
 
 SELECT obtener_nombre_proveedor_por_producto(5);
-

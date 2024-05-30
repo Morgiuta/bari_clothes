@@ -1,6 +1,5 @@
 USE bari_clothes;
 
-USE bari_clothes;
 
 -- PRIMERA VISTA --
 -- Se quieren saber la cantidad de ventas que han hecho a travez del tiempo
@@ -10,7 +9,7 @@ CREATE OR REPLACE VIEW vw_cantidad_ventas AS
     (SELECT 
         COUNT(DISTINCT compra_id) AS cantidad_ventas
     FROM
-        DETALLE);
+        detalle);
  
 SELECT 
     *
@@ -23,7 +22,7 @@ CREATE OR REPLACE VIEW vw_ventas_2023 AS
     (SELECT 
         COUNT(*)
     FROM
-        bari_clothes.COMPRA
+        bari_clothes.compra
     WHERE
         fecha_compra BETWEEN '2023-01-01' AND '2023-12-31');
   
@@ -42,9 +41,9 @@ CREATE OR REPLACE VIEW vw_empleados_sucursal AS
 	,	bce.empleado_apellido AS 'APELLIDO EMPLEADO'
     ,	bcs.sucursal_ciudad AS 'SUCURSAL CIUDAD'
     FROM
-        bari_clothes.EMPLEADO AS bce
+        bari_clothes.empleado AS bce
             INNER JOIN
-        bari_clothes.SUCURSAL AS bcs ON bce.sucursal_id = bcs.sucursal_id);
+        bari_clothes.sucursal AS bcs ON bce.sucursal_id = bcs.sucursal_id);
 
 SELECT 
     *
@@ -58,7 +57,7 @@ CREATE OR REPLACE VIEW vw_envio_no_entregados AS
     (SELECT 
         *
     FROM
-        bari_clothes.ENVIO
+        bari_clothes.envio
     WHERE
         entregado = 0);
         
@@ -78,9 +77,9 @@ CREATE OR REPLACE VIEW vw_metodo_pago_mas_usado AS
 	, 	COUNT(*) AS 'CANTIDAD DE VECES USADO'
 	,	bcmp.metodo_pago_nombre
 	FROM
-		bari_clothes.COMPRA AS bcc 
+		bari_clothes.compra AS bcc 
 		JOIN
-		bari_clothes.METODO_PAGO AS bcmp ON bcc.metodo_pago_id = bcmp.metodo_pago_id
+		bari_clothes.metodo_pago AS bcmp ON bcc.metodo_pago_id = bcmp.metodo_pago_id
 	GROUP BY metodo_pago_id
 	ORDER BY metodo_pago_id DESC
 	LIMIT 1);

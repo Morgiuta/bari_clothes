@@ -33,7 +33,7 @@ DELIMITER ;
 CALL agregar_producto_inventario(28, 5, 56);
 
 -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --
-DROP PROCEDURE IF EXISTS sp_elmiminar_producto_inventario
+DROP PROCEDURE IF EXISTS sp_elmiminar_producto_inventario;
 
 DELIMITER //
 
@@ -99,8 +99,8 @@ CREATE PROCEDURE sp_agregar_empleado (
     IN p_telefono INT
 )
 BEGIN
-    INSERT INTO empleado (sucursal_id, empleado_nombre, empleado_apellido, documento, empleado_teléfono)
-    VALUES (p_sucursal_id, p_nombre, p_apellido, p_documento, p_télefono);
+    INSERT INTO empleado (sucursal_id, empleado_nombre, empleado_apellido, documento, empleado_telefono)
+    VALUES (p_sucursal_id, p_nombre, p_apellido, p_documento, p_telefono);
 END//
 
 DELIMITER ;
@@ -108,7 +108,7 @@ DELIMITER ;
 CALL sp_agregar_empleado(1, 'Juan', 'Perez', 123456789, 5555555);
 
 -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --
-DROP TABLE IF EXISTS sp_eliminar_empleado
+DROP TABLE IF EXISTS sp_eliminar_empleado;
 
 DELIMITER //
 

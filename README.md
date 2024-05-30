@@ -141,21 +141,50 @@ Entre los pedidios este nos detallo como tiene que funcionar la misma
 | cliente_mail      | VARCHAR      | NOT NULL | NO     | -          | NO            |
 | cliente_telefono  | INT          | NOT NULL | NO     | -          | NO            |
 
-**Tabla: p**
+**Tabla: inventario**
 
+| Columna             | Tipo de Dato | NULL     | Unique | Tipo Clave | AutoIncrement |
+|---------------------|--------------|----------|--------|------------|---------------|
+| inventario_id       | INT          | NOT NULL | SI     | PK         | SI            |
+| sucursal_id         | INT          | NOT NULL | NO     | FK         | NO            |
+| producto_id         | INT          | NOT NULL | NO     | FK         | NO            |
+| cantidad_disponible | INT          | NOT NULL | NO     | -          | NO            |
 
+**Tabla: tipo_movimiento**
 
-**Tabla: p**
+| Columna                | Tipo de Dato | NULL     | Unique | Tipo Clave | AutoIncrement |
+|------------------------|--------------|----------|--------|------------|---------------|
+| tipo_movimiento_id     | INT          | NOT NULL | SI     | PK         | SI            |
+| tipo_movimiento_nombre | VARCHAR      | NOT NULL | NO     | -          | NO            |
 
+**Tabla: movimiento_inventario**
 
+| Columna            | Tipo de Dato | NULL     | Unique | Tipo Clave | AutoIncrement |
+|--------------------|--------------|----------|--------|------------|---------------|
+| movimiento_id      | INT          | NOT NULL | SI     | PK         | SI            |
+| inventario_id      | INT          | NOT NULL | NO     | FK         | NO            |
+| tipo_movimiento_id | INT          | NOT NULL | NO     | FK         | NO            |
+| cantidad_afectada  | INT          | NOT NULL | NO     | -          | NO            |
+| fecha_movimiento   | DATE         | NOT NULL | NO     | -          | NO            |
 
-  En esta es una breve descripcion de mi primera entrega
+## Ingesta de datos
 
-  -
+*La ingesta de datos de todas las tablas se realiza mediante archivos csv*
 
-  - En el erchivo **bari_clothes_db_ortiz_ceballos** se puede visulizar la base de datos creada por el alumno
-  - En el archivo **bari_clothes_DER_ortiz_ceballos** se puede ver el **"Diagrama Entidad Relación"**
-  - En **descripcion_y_listado_DB_ortiz_ceballos** Se encuentra un adescripcion de la base de datos
+## Objetos de la base de datos
 
+Los objetos estan colocados sobre la carpeta objects
+  - a_funciones.sql
+  - b_tirggers.sql
+  - c stored_procedures.sql
+  - d_vistas.sql
+  - e_roles-.sql
+Abajo se van a documentar los objetos
 
-[def]: bari_clothes_DER_ortiz_ceballos.png
+### Funciones 
+
+## Funcion: fn_total_compras_por_cliente
+
+**Descripcion** 
+
+Esta funcion nos permite saber la cantidad de compras que hizo un cliente en la tienda de ropa

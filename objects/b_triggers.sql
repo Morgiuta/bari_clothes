@@ -28,8 +28,8 @@ END //
 
 DELIMITER ;
 
-INSERT INTO compra (compra_id,sucursal_id, cliente_id, valor, metodo_pago_id, fecha_compra)
-VALUES (1, 1, 100, 2);
+INSERT INTO compra (compra_id, sucursal_id, cliente_id, valor, metodo_pago_id, fecha_compra)
+VALUES (501, 1, 1, 1000, 1, '2023-01-01');
 
 -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --
 DROP TRIGGER IF EXISTS tr_actualizar_inventario_despues_eliminar_compra;
@@ -55,20 +55,3 @@ END //
 DELIMITER ;
 DELETE FROM detalle WHERE compra_id = 1;
 DELETE FROM compra WHERE compra_id = 1;
-
--- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --
-DROP TRIGGER IF EXISTS registrar_movimiento_inventario_despues_insertar_compra;
-
-DELIMITER //
-
-CREATE TRIGGER registrar_movimiento_inventario_despues_insertar_compra
-AFTER INSERT ON compra
-FOR EACH ROW
-BEGIN
-    -- Registrar un movimiento de inventario después de insertar una nueva compra
-    CALL registrar_entrada_inventario(NEW.producto_id, NEW.sucursal_id, 1);
-END;
-
-DELIMITER ;
-INSERT INTO compra (sucursal_id, cliente_id, valor, metodo_pago_id) 
-VALUES (2, 22, 500, 1);
