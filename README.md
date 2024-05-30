@@ -52,12 +52,12 @@ Entre los pedidios este nos detallo como tiene que funcionar la misma
 
 **Tabla: sucursa**
 
-| Columna         | Tipo de Dato   |  NULL    | Unique  | Tipo Clave  | AutoIncrement |
-|-----------------|----------------|----------|---------|-------------|---------------|
-| sucursal_id     |      INT       | NOT NULL |   SI    |     PK      |      SI       |
-| sucursal_ciudad |    VARCHAR     | NOT NULL |   NO    |      -      |      NO       |
-| sucursal_calle  |    VARCHAR     | NOT NULL |   NO    |      -      |      NO       |
-| codigo postal   |      INT       | NOT NULL |   No    |      -      |      NO       |
+| Columna         | Tipo de Dato |  NULL    | Unique  | Tipo Clave  | AutoIncrement |
+|-----------------|--------------|----------|---------|-------------|---------------|
+| sucursal_id     | INT          | NOT NULL | SI      | PK          | SI            |
+| sucursal_ciudad | VARCHAR      | NOT NULL | NO      | -           | NO            |
+| sucursal_calle  | VARCHAR      | NOT NULL | NO      | -           | NO            |
+| codigo postal   | INT          | NOT NULL | NO      | -           | NO            |
 
 **Tabla: compra**
 
@@ -118,6 +118,34 @@ Entre los pedidios este nos detallo como tiene que funcionar la misma
 | empresa_transporte_nombre | VARCHAR      | NOT NULL | NO     | -          | NO            |
 | empresa_transporte_mail   | VARCHAR      | NOT NULL | SI     | -          | NO            |
 | proveedor_telefono        | INT          | NULL     | NO     | -          | NO            |
+
+**Tabla: envio**
+
+| Columna               | Tipo de Dato | NULL     | Unique | Tipo Clave | AutoIncrement |
+|-----------------------|--------------|----------|--------|------------|---------------|
+| envio_id              | INT          | NOT NULL | SI     | PK         | SI            |
+| compra_id             | INT          | NOT NULL | NO     | FK         | NO            |
+| empresa_transporte_id | INT          | NOT NULL | NO     | FK         | NO            |
+| ciudad_envio          | VARCHAR      | NOT NULL | NO     | -          | NO            |
+| calle_envio           | VARCHAR      | NOT NULL | NO     | -          | NO            |
+| entregado             | BOOL         | NOT NULL | NO     | -          | NO            |
+
+**Tabla: cliente**
+
+| Columna           | Tipo de Dato | NULL     | Unique | Tipo Clave | AutoIncrement |
+|-------------------|--------------|----------|--------|------------|---------------|
+| cliente_id        | INT          | NOT NULL | SI     | PK         | SI            |
+| cliente_nombre    | VARCHAR      | NULL     | NO     | -          | NO            |
+| cliente_apellido  | VARCHAR      | NULL     | NO     | -          | NO            |
+| cliente_documento | INT          | NOT NULL | NO     | -          | NO            |
+| cliente_mail      | VARCHAR      | NOT NULL | NO     | -          | NO            |
+| cliente_telefono  | INT          | NOT NULL | NO     | -          | NO            |
+
+**Tabla: p**
+
+
+
+**Tabla: p**
 
 
 
