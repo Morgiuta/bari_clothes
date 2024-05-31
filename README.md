@@ -205,5 +205,151 @@ La funcion retorna la cantidad de veces que el cliente_id se encuentra en la tab
 ```sql
 SELECT fn_total_compras_por_cliente(5);
 ```
+## Funcion: fn_promedio_precios_productos_por_marca
 
-##
+**Descripcion** 
+
+Esta funcion nos permite saber la marca m´as cara de toda la tienda de ropa calculando su promedio de precios. Esta se calcula sacando un promedio de precio_producto de la tabla producto
+
+**Parametros**
+
+| Parametro | Descripcion                 |
+|-----------|-----------------------------|
+| p_marca   | nombre de la marca tipo INT |
+
+**Retorno**
+
+La funcion retorna el promedio de los precios de una marca en especifico
+
+```sql
+SELECT fn_promedio_precios_productos_por_marca ('Puma');
+```
+
+## Funcion: fn_total_ventas_por_mes
+
+**Descripcion**
+
+Esta funcion calcula la cantidad de ventas hechas en el mes que nosotros queramos saber. Esta se calcula atra vez de filtrar la tabla compra por año y mes
+
+**Parametros**
+
+| Parametro | Descripcion          |
+|-----------|----------------------|
+| p_mes     | mes del año tipo INT |
+| p-año     | año tipo INT         |
+
+**Retorno**
+
+Esta funcion retorna la cantidad de productos que se vendieron en cierto mes
+
+**Uso**
+
+```sql
+SELECT fn_total_ventas_por_mes(04, 2020);
+```
+
+## Funcion: fn_obtener_nombre_proveedor_por_producto
+
+**Descripcion**
+
+Esta funcion encuentra a quien le pertenece el producto cual se busca. Esto se encuentra mediante el producto_id y en la tabla de producto_proveedor para finalmente ser encontrado en la tabla proveedor
+
+**Parametros**
+
+| Parametro      | Descripcion              |
+|----------------|--------------------------|
+| p_productos_id | id del producto tipo INT |
+
+**Retorno**
+
+Esta funcion nos devuelve el nombre del proveedor que nos proveyo de ese producto
+
+**Uso**
+
+```sql
+SELECT fn_obtener_nombre_proveedor_por_producto(5);
+```
+
+### Documentación de Triggers 
+
+### Listado de triggers
+
+### Trigger: tr_actualizar_inventario_despues_insertar_compra
+
+**Descripcion**
+
+Este trigger se ejecuta cada vez que se agrega un registro en la tabla de compras
+
+### Trigger: tr_actualizar_inventario_despues_eliminar_compra
+
+**Este trigger se ejecuta cada ves que se elimina un registro en la tabla de compras
+
+
+### Documentación de Procedimientos Almacenados
+
+
+### Procedimiento: sp_agregar_producto_inventario
+
+**Descripcion**
+
+Este procedimiento agrega productos al inventario
+
+### Procedimiento: sp_elmiminar_producto_inventario
+
+**Descrpicion**
+
+Este procedimiento elimina productos del inventario
+
+### Procedimiento: sp_registrar_entrada_inventario
+
+**Descripcion**
+
+Este procedimito agrega entradas al inventrio
+
+### Procedimiento: sp_agregar_empleado
+
+**Descripcion**
+
+Este procedimetno agrega empleados a la tabla empleado
+
+### Procedimiento: sp_eliminar_empleado
+
+**Descripcion**
+
+Este procedimiento elimina empleados
+
+
+### Documentación de Vistas
+
+
+### Listado de Vistas
+
+### Vista: vw_cantidad_ventas
+
+**Descripcion**
+
+Esta vista muestra la cantidad de ventas
+
+### Vista: vw_ventas_2023
+
+**Descripcion**
+
+Esta vista muestra la cantidad de ventas en el año 2023
+
+### Vista: vw_empleados_sucursal
+
+**Descripcion**
+
+Esta vista muestra los empleados de cierta sucursal
+
+### Vista: vw_envio_no_entregados
+
+**Descripcion**
+
+Esta vista muestra los envios que todavia no llegaron a su destinatario
+
+## Vista: vw_metodo_pago_mas_usado
+
+**Descripcion**
+
+Esta vista muestra el metodo de pago más usado en la tienda de ropa

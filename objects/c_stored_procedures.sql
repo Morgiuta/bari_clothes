@@ -1,10 +1,10 @@
 USE bari_clothes;
 
-DROP PROCEDURE IF EXISTS agregar_producto_inventario;
+DROP PROCEDURE IF EXISTS sp_agregar_producto_inventario;
 
 DELIMITER //
 
-CREATE PROCEDURE agregar_producto_inventario (
+CREATE PROCEDURE sp_agregar_producto_inventario (
     IN p_producto_id INT,
     IN p_sucursal_id INT,
     IN p_cantidad INT
@@ -30,7 +30,7 @@ END//
 
 DELIMITER ;
 
-CALL agregar_producto_inventario(28, 5, 56);
+CALL sp_agregar_producto_inventario(28, 5, 56);
 
 -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --
 DROP PROCEDURE IF EXISTS sp_elmiminar_producto_inventario;

@@ -65,11 +65,11 @@ SELECT fn_total_ventas_por_mes(04, 2020);
 
 -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --
 -- Se quiere saber a que proveedor le corresponde cada producto
-DROP FUNCTION IF EXISTS obtener_nombre_proveedor_por_producto;
+DROP FUNCTION IF EXISTS fn_obtener_nombre_proveedor_por_producto;
 
 DELIMITER //
 
-CREATE FUNCTION obtener_nombre_proveedor_por_producto (
+CREATE FUNCTION fn_obtener_nombre_proveedor_por_producto (
     p_producto_id INT
 ) RETURNS VARCHAR(70)
 DETERMINISTIC
@@ -88,4 +88,4 @@ END//
 
 DELIMITER ;
 
-SELECT obtener_nombre_proveedor_por_producto(5);
+SELECT fn_obtener_nombre_proveedor_por_producto(5);
