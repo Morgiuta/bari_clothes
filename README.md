@@ -179,6 +179,7 @@ Los objetos estan colocados sobre la carpeta objects
   - c stored_procedures.sql
   - d_vistas.sql
   - e_roles-.sql
+
 Abajo se van a documentar los objetos
 
 ### Funciones 
@@ -187,4 +188,22 @@ Abajo se van a documentar los objetos
 
 **Descripcion** 
 
-Esta funcion nos permite saber la cantidad de compras que hizo un cliente en la tienda de ropa
+Esta funcion nos permite saber la cantidad de compras que hizo un cliente en la tienda de ropa. Esta se calcula contando las veces que aparece el cliente_id en la tabla compra
+
+**Paraametros**
+
+| Parametro    | Descripcion             |
+|--------------|-------------------------|
+| p_cliente_id | id del cliente tipo INT |
+
+**Retorno**
+
+La funcion retorna la cantidad de veces que el cliente_id se encuentra en la tabla de compras
+
+**Uso**
+
+```sql
+SELECT fn_total_compras_por_cliente(5);
+```
+
+##

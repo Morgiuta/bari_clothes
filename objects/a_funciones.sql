@@ -4,7 +4,7 @@ USE bari_clothes;
 DROP FUNCTION IF EXISTS fn_total_compras_por_cliente;
 
 DELIMITER //
-CREATE FUNCTION total_compras_por_cliente (
+CREATE FUNCTION fn_total_compras_por_cliente (
     p_cliente_id INT
 ) RETURNS INT
 DETERMINISTIC
@@ -17,7 +17,7 @@ BEGIN
 END//
 DELIMITER ;
 
-SELECT total_compras_por_cliente(5);
+SELECT fn_total_compras_por_cliente(5);
 
 -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --  -- --
 -- Se quiere saber el promedio de precios por cada marca
